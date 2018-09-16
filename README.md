@@ -1,6 +1,6 @@
-# About Gocoin
+# About BTCG
 
-**Gocoin** is a full **Bitcoin** solution written in Go language (golang).
+**BTCG** is a full **Bitcoin** solution written in Go language (golang).
 
 The software architecture is focused on maximum performance of the node
 and cold storage security of the wallet.
@@ -42,7 +42,7 @@ Currently that can be at least one of the following:
 * Free BSD
 
 ## Build environment
-In order to build Gocoin yourself, you will need the following tools installed in your system:
+In order to build BTCG yourself, you will need the following tools installed in your system:
 
 * **Go** (version 1.8 or higher) - http://golang.org/doc/install
 * **Git** - http://git-scm.com/downloads
@@ -60,7 +60,7 @@ When building for Linux make sure to have `gcc` installed or delete file `lib/ut
 Use `go get` to fetch and install the source code files.
 Note that source files get installed within your GOPATH folder.
 
-	go get github.com/piotrnar/gocoin
+	go get github.com/piotrnar/BTCG
 
 
 # Building
@@ -84,7 +84,7 @@ Repeat the `go build` for each source file of the tool you want to build.
 
 Windows or Linux (amd64) binaries can be downloaded from
 
- * https://sourceforge.net/projects/gocoin/files/?source=directory
+ * https://sourceforge.net/projects/BTCG/files/?source=directory
 
 Please note that the binaries are usually not up to date.
 I strongly encourage everyone to build the binaries himself.
@@ -96,9 +96,9 @@ licensing. If you are missing some functionality, just describe me your needs an
 for you. But if you want your specific code in, please fork and develop your own repo.
 
 # Support
-The official web page of the project is served at <a href="http://gocoin.pl">gocoin.pl</a>
+The official web page of the project is served at <a href="http://BTCG.pl">BTCG.pl</a>
 where you can find extended documentation, including **User Manual**.
 
 Please do not log github issues when you only have questions concerning this software.
-Instead see [Contact](http://gocoin.pl/gocoin_links.html) page at [gocoin.pl](http://gocoin.pl) website
+Instead see [Contact](http://BTCG.pl/BTCG_links.html) page at [BTCG.pl](http://BTCG.pl) website
 for possible ways of contacting me.
