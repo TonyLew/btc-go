@@ -1,20 +1,20 @@
 package webui
 
 import (
-	"log"
 	"crypto/rand"
 	"crypto/tls"
 	"crypto/x509"
 	"encoding/hex"
 	"fmt"
-	"github.com/piotrnar/gocoin"
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/client/usif"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"path/filepath"
 	"strings"
 	"time"
+
+	"github.com/TonyLew/btcg/client/common"
+	"github.com/TonyLew/btcg/client/usif"
 )
 
 var start_time time.Time
@@ -253,4 +253,3 @@ func start_ssl_server() {
 		println(err.Error())
 	}
 }
-

@@ -4,14 +4,15 @@ import (
 	"bytes"
 	"encoding/binary"
 	"fmt"
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/lib/others/peersdb"
-	"github.com/piotrnar/gocoin/lib/others/qdb"
-	"github.com/piotrnar/gocoin/lib/others/sys"
 	"sort"
 	"sync"
 	"time"
+
+	"github.com/TonyLew/btcg/client/common"
+	"github.com/TonyLew/btcg/lib/btc"
+	"github.com/TonyLew/btcg/lib/others/peersdb"
+	"github.com/TonyLew/btcg/lib/others/qdb"
+	"github.com/TonyLew/btcg/lib/others/sys"
 )
 
 var (
@@ -54,10 +55,10 @@ func GetExternalIPs() (arr []ExternalIpRec) {
 
 	if len(ExternalIp4) > 0 {
 		for ip, rec := range ExternalIp4 {
-			if arx != nil && arx.IP==ip {
+			if arx != nil && arx.IP == ip {
 				continue
 			}
-			arr = append(arr, ExternalIpRec{IP:ip, Cnt:rec[0], Tim:rec[1]})
+			arr = append(arr, ExternalIpRec{IP: ip, Cnt: rec[0], Tim: rec[1]})
 		}
 
 		if len(arr) > 1 {

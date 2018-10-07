@@ -2,10 +2,11 @@ package network
 
 import (
 	"fmt"
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/lib/btc"
 	"sort"
 	"time"
+
+	"github.com/TonyLew/btcg/client/common"
+	"github.com/TonyLew/btcg/lib/btc"
 )
 
 var (

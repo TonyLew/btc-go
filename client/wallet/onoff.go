@@ -3,9 +3,10 @@ package wallet
 import (
 	"bytes"
 	"encoding/gob"
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/lib/utxo"
 	"io/ioutil"
+
+	"github.com/TonyLew/btcg/client/common"
+	"github.com/TonyLew/btcg/lib/utxo"
 )
 
 var (

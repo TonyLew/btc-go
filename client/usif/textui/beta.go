@@ -2,9 +2,10 @@ package textui
 
 import (
 	"fmt"
-	"github.com/piotrnar/gocoin/client/network"
-	"github.com/piotrnar/gocoin/lib/btc"
 	"time"
+
+	"github.com/TonyLew/btcg/client/network"
+	"github.com/TonyLew/btcg/lib/btc"
 )
 
 func new_block(par string) {

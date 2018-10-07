@@ -2,14 +2,15 @@ package textui
 
 import (
 	"fmt"
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/client/network"
-	"github.com/piotrnar/gocoin/client/usif"
-	"github.com/piotrnar/gocoin/lib/btc"
 	"io/ioutil"
 	"os"
 	"strconv"
 	"time"
+
+	"github.com/TonyLew/btcg/client/common"
+	"github.com/TonyLew/btcg/client/network"
+	"github.com/TonyLew/btcg/client/usif"
+	"github.com/TonyLew/btcg/lib/btc"
 )
 
 func load_tx(par string) {
@@ -240,7 +241,6 @@ func get_mempool(par string) {
 	fmt.Println("Getting mempool from connection ID", conid, "...")
 	network.GetMP(uint32(conid))
 }
-
 
 func init() {
 	newUi("txload tx", true, load_tx, "Load transaction data from the given file, decode it and store in memory")

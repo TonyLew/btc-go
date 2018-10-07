@@ -4,15 +4,6 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
-	"github.com/piotrnar/gocoin"
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/client/network"
-	"github.com/piotrnar/gocoin/client/usif"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/lib/others/peersdb"
-	"github.com/piotrnar/gocoin/lib/others/qdb"
-	"github.com/piotrnar/gocoin/lib/others/sys"
-	"github.com/piotrnar/gocoin/lib/utxo"
 	"io/ioutil"
 	"os"
 	"runtime"
@@ -22,6 +13,15 @@ import (
 	"strings"
 	"sync/atomic"
 	"time"
+
+	"github.com/TonyLew/btcg/client/common"
+	"github.com/TonyLew/btcg/client/network"
+	"github.com/TonyLew/btcg/client/usif"
+	"github.com/TonyLew/btcg/lib/btc"
+	"github.com/TonyLew/btcg/lib/others/peersdb"
+	"github.com/TonyLew/btcg/lib/others/qdb"
+	"github.com/TonyLew/btcg/lib/others/sys"
+	"github.com/TonyLew/btcg/lib/utxo"
 )
 
 type oneUiCmd struct {

@@ -2,19 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/piotrnar/gocoin"
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/client/network"
-	"github.com/piotrnar/gocoin/client/rpcapi"
-	"github.com/piotrnar/gocoin/client/usif"
-	"github.com/piotrnar/gocoin/client/usif/textui"
-	"github.com/piotrnar/gocoin/client/usif/webui"
-	"github.com/piotrnar/gocoin/client/wallet"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/lib/chain"
-	"github.com/piotrnar/gocoin/lib/others/peersdb"
-	"github.com/piotrnar/gocoin/lib/others/qdb"
-	"github.com/piotrnar/gocoin/lib/others/sys"
 	"io/ioutil"
 	"os"
 	"os/signal"
@@ -22,6 +9,19 @@ import (
 	"runtime/debug"
 	"time"
 	"unsafe"
+
+	"github.com/TonyLew/btcg/client/common"
+	"github.com/TonyLew/btcg/client/network"
+	"github.com/TonyLew/btcg/client/rpcapi"
+	"github.com/TonyLew/btcg/client/usif"
+	"github.com/TonyLew/btcg/client/usif/textui"
+	"github.com/TonyLew/btcg/client/usif/webui"
+	"github.com/TonyLew/btcg/client/wallet"
+	"github.com/TonyLew/btcg/lib/btc"
+	"github.com/TonyLew/btcg/lib/chain"
+	"github.com/TonyLew/btcg/lib/others/peersdb"
+	"github.com/TonyLew/btcg/lib/others/qdb"
+	"github.com/TonyLew/btcg/lib/others/sys"
 )
 
 var (
@@ -30,7 +30,7 @@ var (
 )
 
 const (
-	SaveBlockChainAfter = 2 * time.Second
+	SaveBlockChainAfter       = 2 * time.Second
 	SaveBlockChainAfterNoSync = 10 * time.Minute
 )
 

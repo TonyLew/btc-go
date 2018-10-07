@@ -5,15 +5,16 @@ import (
 	"encoding/binary"
 	"encoding/hex"
 	"fmt"
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/lib/others/peersdb"
 	"math/rand"
 	"net"
 	"os"
 	"runtime/debug"
 	"strings"
 	"time"
+
+	"github.com/TonyLew/btcg/client/common"
+	"github.com/TonyLew/btcg/lib/btc"
+	"github.com/TonyLew/btcg/lib/others/peersdb"
 )
 
 var (

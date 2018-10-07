@@ -6,11 +6,12 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/lib/btc"
 	"io"
 	"os"
 	"time"
+
+	"github.com/TonyLew/btcg/client/common"
+	"github.com/TonyLew/btcg/lib/btc"
 )
 
 var (
@@ -248,7 +249,6 @@ fatal_error:
 	return false
 }
 
-
 // this one is only called from TextUI
 func MempoolLoadNew(fname string, abort *bool) bool {
 	var ntx *TxRcvd
@@ -276,10 +276,10 @@ func MempoolLoadNew(fname string, abort *bool) bool {
 	}
 	fmt.Println("Loading", totcnt, "transactions from", fname)
 
-	oneperc = totcnt/100
+	oneperc = totcnt / 100
 
 	for idx = 0; idx < totcnt; idx++ {
-		if cntdwn==0 {
+		if cntdwn == 0 {
 			fmt.Print("\r", perc, "% complete...")
 			perc++
 			cntdwn = oneperc
