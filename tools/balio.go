@@ -5,11 +5,11 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	"github.com/piotrnar/gocoin"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/lib/others/ltc"
-	"github.com/piotrnar/gocoin/lib/others/utils"
-	"github.com/piotrnar/gocoin/lib/utxo"
+	"github.com/TonyLew/btcg"
+	"github.com/TonyLew/btcg/lib/btc"
+	"github.com/TonyLew/btcg/lib/others/ltc"
+	"github.com/TonyLew/btcg/lib/others/utils"
+	"github.com/TonyLew/btcg/lib/utxo"
 	"io"
 	"io/ioutil"
 	"net"
@@ -152,7 +152,7 @@ func load_wallet(fn string) (addrs []*btc.BtcAddr) {
 }
 
 func main() {
-	fmt.Println("Gocoin BalIO version", gocoin.Version)
+	fmt.Println("Gocoin BalIO version", btcg.Version)
 
 	if len(os.Args) < 2 {
 		print_help()

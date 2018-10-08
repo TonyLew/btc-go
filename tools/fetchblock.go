@@ -2,16 +2,16 @@ package main
 
 import (
 	"fmt"
-	"github.com/piotrnar/gocoin/lib/btc"
+	"github.com/TonyLew/btcg/lib/btc"
 	"io/ioutil"
-	"github.com/piotrnar/gocoin/lib/others/utils"
-	"github.com/piotrnar/gocoin"
+	"github.com/TonyLew/btcg/lib/others/utils"
+	"github.com/TonyLew/btcg"
 	"os"
 )
 
 
 func main() {
-	fmt.Println("Gocoin FetchBlock version", gocoin.Version)
+	fmt.Println("Gocoin FetchBlock version", btcg.Version)
 
 	if len(os.Args) < 2 {
 		fmt.Println("Specify block hash on the command line (MSB).")

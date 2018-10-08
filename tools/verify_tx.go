@@ -1,6 +1,6 @@
 // +build windows
 
-// On Windows OS copy this file to gocoin\client\usif\textui to enable consensus checking
+// On Windows OS copy this file to btcg\client\usif\textui to enable consensus checking
 // Make sure you have proper "libbitcoinconsensus-0.dll" in a folder where OS can find it.
 
 package main
@@ -8,8 +8,8 @@ package main
 import (
 	"encoding/hex"
 	"fmt"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/lib/script"
+	"github.com/TonyLew/btcg/lib/btc"
+	"github.com/TonyLew/btcg/lib/script"
 	"syscall"
 	"unsafe"
 )

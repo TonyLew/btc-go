@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"sort"
 	"time"
-	"github.com/piotrnar/gocoin/lib/others/qdb"
-	"github.com/piotrnar/gocoin/lib/others/sys"
-	"github.com/piotrnar/gocoin/lib/others/utils"
+	"github.com/TonyLew/btcg/lib/others/qdb"
+	"github.com/TonyLew/btcg/lib/others/sys"
+	"github.com/TonyLew/btcg/lib/others/utils"
 )
 
 type manyPeers []*utils.OnePeer
@@ -31,7 +31,7 @@ func main() {
 	if len(os.Args)>1 {
 		dir = os.Args[1]
 	} else {
-		dir = sys.BitcoinHome() + "gocoin" + string(os.PathSeparator) + "btcnet" + string(os.PathSeparator) + "peers3"
+		dir = sys.BitcoinHome() + "btcg" + string(os.PathSeparator) + "btcnet" + string(os.PathSeparator) + "peers3"
 	}
 
 	db, er := qdb.NewDB(dir, true)

@@ -1,14 +1,14 @@
-// This tool can import blockchain database from satoshi client to gocoin
+// This tool can import blockchain database from satoshi client to btcg
 package main
 
 import (
 	"os"
 	"fmt"
 	"time"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/lib/chain"
-	"github.com/piotrnar/gocoin/lib/others/blockdb"
-	"github.com/piotrnar/gocoin/lib/others/sys"
+	"github.com/TonyLew/btcg/lib/btc"
+	"github.com/TonyLew/btcg/lib/chain"
+	"github.com/TonyLew/btcg/lib/others/blockdb"
+	"github.com/TonyLew/btcg/lib/others/sys"
 )
 
 const Trust = true  // Set this to false if you want to re-check all scripts
@@ -142,7 +142,7 @@ func main() {
 	if len(os.Args)>2 {
 		GocoinHomeDir = RemoveLastSlash(os.Args[2])+string(os.PathSeparator)
 	} else {
-		GocoinHomeDir = sys.BitcoinHome()+"gocoin"+string(os.PathSeparator)
+		GocoinHomeDir = sys.BitcoinHome()+"btcg"+string(os.PathSeparator)
 	}
 
 	if Magic==[4]byte{0x0B,0x11,0x09,0x07} {

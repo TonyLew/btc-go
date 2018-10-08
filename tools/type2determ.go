@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strconv"
 	"encoding/hex"
-	"github.com/piotrnar/gocoin/lib/btc"
+	"github.com/TonyLew/btcg/lib/btc"
 )
 
 
