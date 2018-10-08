@@ -4,9 +4,9 @@ import (
 	"os"
 	"fmt"
 	"flag"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin"
-	"github.com/piotrnar/gocoin/lib/others/sys"
+	"github.com/TonyLew/btcg/lib/btc"
+	"github.com/TonyLew/btcg"
+	"github.com/TonyLew/btcg/lib/others/sys"
 )
 
 var (
@@ -81,7 +81,7 @@ func cleanExit(code int) {
 
 func main() {
 	// Print the logo to stderr
-	println("Gocoin Wallet version", gocoin.Version)
+	println("Gocoin Wallet version", btcg.Version)
 	println("This program comes with ABSOLUTELY NO WARRANTY")
 	println()
 

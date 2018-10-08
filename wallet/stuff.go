@@ -7,9 +7,9 @@ import (
 	"bytes"
 	"strings"
 	"io/ioutil"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/lib/others/ltc"
-	"github.com/piotrnar/gocoin/lib/others/sys"
+	"github.com/TonyLew/btcg/lib/btc"
+	"github.com/TonyLew/btcg/lib/others/ltc"
+	"github.com/TonyLew/btcg/lib/others/sys"
 )
 
 // Cache for txs from already loaded from balance/ folder
