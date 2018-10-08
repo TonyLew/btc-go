@@ -25,7 +25,7 @@ function get_body($fn) {
 }
 
 $menu = get_body("menu.html");
-$fielname = "gocoin_$page.html";
+$fielname = "btcg_$page.html";
 
 // add class="selected" to the main menu
 $apos = strpos($menu, 'href="' . $fielname);

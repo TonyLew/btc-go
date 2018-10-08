@@ -1,1 +1,1 @@
-This is the source code of [gocoin.pl](https://gocoin.pl) website
+This is the source code of [btcg.pl](https://btcg.pl) website
